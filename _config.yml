@@ -1,0 +1,110 @@
+title: Sustainable AI Reserach
+email: sustainable.ml@ise.tu-berlin.de
+description: >- # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "io.github.ise-sustainable-ai" # the base hostname & protocol for your site, e.g. http://example.com
+
+github_username:  ISE-Sustainable-AI
+repository: ISE-Sustainable-AI/ISE-Sustainable-AI
+remote_theme: just-the-docs/just-the-docs
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-include-cache
+
+exclude:
+  - .jekyll-cache/
+  - Gemfile
+  - Gemfile.lock
+
+# collections:
+#   basht:
+#     permalink: "/:collection/:path/"
+#     directory: _basht
+#     relative_directory: true
+#     output: true
+#   # paper:
+#   #   permalink: "/:collection/:path/"
+#   #   output: true
+#   results:
+#     permalink: "/:collection/:path/"
+#     output: true
+#     directory: _basht
+#     relative_directory: true
+
+
+## just the docs config
+# just_the_docs:
+#   # Define which collections are used in just-the-docs
+#   collections:
+#     basht:
+#       name: Basht
+#       # Exclude the collection from the navigation
+#       # Supports true or false (default)
+#       # nav_exclude: true
+#       # Fold the collection in the navigation
+#       # Supports true or false (default)
+#       nav_fold: false
+#       # Exclude the collection from the search
+#       # Supports true or false (default)
+#       # search_exclude: true
+#     # paper:
+#     #   name: Publications
+    
+#     results:
+#       name: Experiment Data
+#       search_exclude: true
+#       nav_fold: false
+
+
+# color_scheme: dark
+search_enabled: false
+
+search:
+  # Split pages into sections that can be searched individually
+  # Supports 1 - 6, default: 2
+  heading_level: 2
+  # Maximum amount of previews per search result
+  # Default: 3
+  previews: 3
+  # Maximum amount of words to display before a matched word in the preview
+  # Default: 5
+  preview_words_before: 5
+  # Maximum amount of words to display after a matched word in the preview
+  # Default: 10
+  preview_words_after: 10
+  # Set the search token separator
+  # Default: /[\s\-/]+/
+  # Example: enable support for hyphenated search words
+  tokenizer_separator: /[\s/]+/
+  # Display the relative url in search results
+  # Supports true (default) or false
+  rel_url: true
+  # Enable or disable the search button that appears in the bottom right corner of every page
+  # Supports true or false (default)
+  button: false
+
+mermaid:
+  # Version of mermaid library
+  # Pick an available version from https://cdn.jsdelivr.net/npm/mermaid/
+  version: "9.1.3"
+
+
+heading_anchors: true
+
+footer_content: "Copyright &copy; 2022 - ISE, TU Berlin."
+
+# Footer last edited timestamp
+last_edit_timestamp: true # show or hide edit time - page must have `last_modified_date` defined in the frontmatter
+last_edit_time_format: "%b %e %Y at %I:%M %p" # uses ruby's time format: https://ruby-doc.org/stdlib-2.7.0/libdoc/time/rdoc/Time.html
+
+# Footer "Edit this page on GitHub" link text
+gh_edit_link: true # show or hide edit this page link
+gh_edit_link_text: "Edit this page on GitHub."
+gh_edit_repository: "https://github.com/ISE-Sustainable-AI/ISE-Sustainable-AI" # the github URL for your repo
+gh_edit_branch: "main" # the branch that your docs is served from
+# gh_edit_source: docs # the source that your files originate from
+gh_edit_view_mode: "tree" # "tree" or "edit" if you want the user to jump into the editor immediately
