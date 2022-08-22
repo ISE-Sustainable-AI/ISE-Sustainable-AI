@@ -6,8 +6,13 @@ use_math: true
 ---
 
 # Basht - A **B**enchmarking **A**pproach for **S**ustainabile **H**yperparameter **T**uning
-
+{: .no_toc :}
 To aid repeatability and relevance, we created Basht a benchmarking tool to evlaute the sustianability impacts of hyperparameter optimization framework configurations.
+
+## Table of contents
+{: .no_toc .text-delta }
+1. TOC
+{:toc}
 
 ## Design
 
@@ -77,7 +82,7 @@ part of the benchmarking experiment.**
 A Trial defines the loading, training, and validation of a model with a
 specific hyperparameter configuration. A hyperparameter configuration is
 one combination of hyperparameters that can be used to initialize a
-model, e.g., $\{learning-rate=1e^-2, weight-decay=1e^-6\}$. Note that we
+model, e.g., $$\{learning-rate=1e^-2, weight-decay=1e^-6\}$$. Note that we
 make no assumptions on where or how the trial is performed. Thus, during
 the experiment, we need to be able to track each trail carefully.
 
@@ -145,20 +150,20 @@ separately for each platform.
 
 | Variable | Domain                          | Short-Description                  | 
 |:---------|:--------------------------------|:-----------------------------------|
-| $wn$     | $\mathbb{N}$                    | Number of Worker                   |
-| $at$     | $\{$CPU, GPU, TPU$\}$           | Accelerator Type                   |
-| $wcpu$   | $\mathbb{N}$                    | vCPU per Worker                    |
-| $wmem$   | $\mathbb{N}$ in MB              | Memory per Worker                  |
-| $amem$   | $\mathbb{N}$ in MB              | Accelerator Memory                 |
-| $t$      | $\{$MNIST$, ...\}$              | Dateset                            |
-| $m$      | github-url                      | Model-Implementation               |
-| $ts$     | $\mathbb{N}$ in MB              | Dataset Size                       |
-| $ta$     | Text                            | Training Algorithm                 |
-| $sa$     | Text                            | Sampling Strategy                  |
-| $pa$     | Text                            | Pruning Strategy                   |
-| $tg$     | Text                            | Optimization Goal                  |
-| $\Phi$   | Set                             | Hyperparameter Space               |
-| $pS$     | $\mathbb{N}$                    | $\|\Phi\|$                         |
+| $$wn$$     | $$\mathbb{N}$$                    | Number of Worker                   |
+| $$at$$     | $$\{$$CPU, GPU, TPU$$\}$$           | Accelerator Type                   |
+| $$wcpu$$   | $$\mathbb{N}$$                    | vCPU per Worker                    |
+| $$wmem$$   | $$\mathbb{N}$$ in MB              | Memory per Worker                  |
+| $$amem$$   | $$\mathbb{N}$$ in MB              | Accelerator Memory                 |
+| $$t$$      | $$\{$$MNIST$$, ...\}$$              | Dateset                            |
+| $$m$$      | github-url                      | Model-Implementation               |
+| $$ts$$     | $$\mathbb{N}$$ in MB              | Dataset Size                       |
+| $$ta$$     | Text                            | Training Algorithm                 |
+| $$sa$$     | Text                            | Sampling Strategy                  |
+| $$pa$$     | Text                            | Pruning Strategy                   |
+| $$tg$$     | Text                            | Optimization Goal                  |
+| $$\Phi$$   | Set                             | Hyperparameter Space               |
+| $$pS$$     | $$\mathbb{N}$$                    | $$\|\Phi\|$$                         |
 
 {: .text-center :}
 **Table 1**: Basht measrumentes 
@@ -166,15 +171,14 @@ separately for each platform.
 
 | Variable | Domain                          | Short-Description                  | 
 |:---------|:--------------------------------|:-----------------------------------|
-| $TWH$    | $\mathbb{R}$ in kWh             | Average Wattage used per Trial     |
-| $CINT$   | $\mathbb{R}$ in $gCO_{2eq}/kWh$ | Average Carbon Intensity per Trial |
-| $JCT$    | $\mathbb{N}$ in ms              | Job Completion Time                |
-| $OC$     | $\mathbb{R}$ in USD             | Job Cost                           |
-| $WTC$    | $\mathbb{R}$ in USD             | Waste-Trial Cost                   |
-| $WTT$    | $\mathbb{N}$ in ms              | Wasted-Trial Compute Time          |
-| $WTE$    | $\mathbb{R}$ in kWh             | Wasted-Trial Energy                |
-| $WR$     | $\mathbb{R}$ in Percent         | Wattage used by idle resources     |
-| Variable | Domain                          | Short-Description                  |
+| $$TWH$$    | $$\mathbb{R}$$ in kWh             | Average Wattage used per Trial     |
+| $$CINT$$   | $$\mathbb{R}$$ in $$gCO_{2eq}/kWh$$ | Average Carbon Intensity per Trial |
+| $$JCT$$    | $$\mathbb{N}$$ in ms              | Job Completion Time                |
+| $$OC$$     | $$\mathbb{R}$$ in USD             | Job Cost                           |
+| $$WTC$$    | $$\mathbb{R}$$ in USD             | Waste-Trial Cost                   |
+| $$WTT$$    | $$\mathbb{N}$$ in ms              | Wasted-Trial Compute Time          |
+| $$WTE$$    | $$\mathbb{R}$$ in kWh             | Wasted-Trial Energy                |
+| $$WR$$     | $$\mathbb{R}$$ in Percent         | Wattage used by idle resources     |
 
 {: .text-center :}
 **Table 2**: Core Metrics
