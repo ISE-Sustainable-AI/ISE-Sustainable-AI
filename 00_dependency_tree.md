@@ -18,13 +18,11 @@ Herein we will review how observable metrics and dependencies can be connected. 
 {:toc}
 
 
-<p align = "center">
+<figure>
 <img src =/assets/graphics/dependency_model.drawio.png
-
 </p>
-<p align = "center">
-Fig.1 - Dependency Tree for hyperparameter optimization
-</p>
+<figcaption align = "center"><b>Fig.1 - Dependency Tree for hyperparameter optimization.</b></figcaption>
+</figure>
 
 The root node of the dependency tree is always a relevant metric. In figure \ref{fig:kWh} this root node is trial-watt-hours, measured in kilowatt-hours, expressing sustainability of \textit{HPO} through average energy consumption per trial, thus with the tree in figure~\ref{fig:kWh} we aim to reveal cause-effect relations between the metric ($TWH$) and HPO decencies, such as used resources.
 % Every subnode, except leaf nodes depict categories, which group other categories or leaf nodes.
