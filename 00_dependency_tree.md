@@ -20,7 +20,6 @@ Herein we will review how observable metrics and dependencies can be connected. 
 
 <figure>
 <img src ="/assets/graphics/dependency_model.drawio.png">
-</p>
 <figcaption align = "center"><b>Fig.1 - Dependency Tree for hyperparameter optimization.</b></figcaption>
 </figure>
 
