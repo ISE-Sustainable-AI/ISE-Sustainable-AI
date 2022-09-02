@@ -34,10 +34,7 @@ pruning ($$pa=\emptyset$$) and the equivalent of four similar-sized
 workers with: $$wn=4, wcpu=2, wmem=2048, at=CPU$$, each without any
 accelerator hardware configured. We want to stress that the workload
 configuration shall not be mistaken with a hyperparameter configuration
-$$\phi$$. For exploring different $$\phi$$ we define the *hyperparameter
-search space* as: 
-
-$$\Phi={\lbrace lr = \lbrace i*1e^{-4} \rbrace_{i=1}^{100} \rbrace , decay =\lbrace i*1e^{-6}\rbrace _{i=1}^{100}, ln =\lbrace i\rbrace _{i=1}^4, ls =\lbrace i*12\rbrace _{i=1}^{10} \rbrace}$$
+$$\phi$$.
 
 ### Resource Impact Experimentes
 To explore the effects of changing resources and parallelization, we
