@@ -8,10 +8,14 @@ use_math: true
 
 ## Dependency Model
 
-
+{: .no_toc :}
 A variety of factors influence observable software qualities in HPO.
 We aim to unveil the underlying dependencies of these factors using the structure of the HPO process together with controlled experimentation and observation of these software qualities.
 Herein we will briefly review how observable metrics and dependencies can be connected. Towards that, we present a first tree-based dependency model for exploring the sustainability impacts of all dependencies in hyperparameter optimization.
+
+{: .no_toc .text-delta }
+1. TOC
+{:toc}
 
 ![dependency_tree](/assets/graphics/dependency_model.drawio.png)
 
