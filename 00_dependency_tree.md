@@ -38,7 +38,7 @@ Furthermore, the used HPO-Framework may also affect the __TWH__, as some framewo
 Higher utilization of computing resources may indicate more extensive consumption of natural resources through higher energy consumption.
 Furthermore, these pruning strategies may potentially include natural resources as budget constraints when deciding about the cancellation of individual trials, thus, making them an excellent candidate to be included in the dependency tree.
 
-### Waste
+## Waste
 Parallelization strategies used by different **HPO** frameworks can also cause waste in the form of stragglers.
 Stragglers are most likely caused by a combination of an unlucky hyperparameter configuration and poor parallelization or work distribution.
 GPUs with differing computational power might be used for some already slowly converging hyperparameter configurations and thus lead to problematic trials. These trials are needed to be waited on, resulting in a waste of computing resources leading to potentially avoidable energy consumption, thus, we included parallelization as a key factor in the model.
