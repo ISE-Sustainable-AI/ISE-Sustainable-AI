@@ -43,4 +43,4 @@ Parallelization strategies used by different **HPO** frameworks can also cause w
 Stragglers are most likely caused by a combination of an unlucky hyperparameter configuration and poor parallelization or work distribution.
 GPUs with differing computational power might be used for some already slowly converging hyperparameter configurations and thus lead to problematic trials. These trials are needed to be waited on, resulting in a waste of computing resources leading to potentially avoidable energy consumption, thus, we included parallelization as a key factor in the model.
 
-We are aware that the presented dependency model is incomplete, however, it shall serve as a starting point to investigate the sustainability qualities of HPO frameworks and unveil cause-effect relations in a greater scope, allowing for future refinement of this model.
+We are aware that the presented dependency model is incomplete, however, it shall serve as a starting point to investigate the sustainability qualities of __HPO__ frameworks and unveil cause-effect relations in a greater scope, allowing for future refinement of this model.
